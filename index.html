@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Advanced Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>Pixel Gallery</h1>
+
+        <div class="nav-right">
+            <input type="text" id="searchInput" placeholder="Search images...">
+            <button id="themeToggle">🌙</button>
+        </div>
+    </nav>
+
+    <!-- Filter Buttons -->
+    <section class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="city">City</button>
+        <button class="filter-btn" data-filter="animals">Animals</button>
+    </section>
+
+    <!-- Gallery -->
+    <main class="gallery" id="gallery">
+
+        <div class="card nature" data-title="mountain">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=900" alt="">
+            <div class="overlay">
+                <h3>Mountain</h3>
+                <div class="card-buttons">
+                    <button class="like-btn">❤</button>
+                    <button class="download-btn">⬇</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card city" data-title="city lights">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=900" alt="">
+            <div class="overlay">
+                <h3>City Lights</h3>
+                <div class="card-buttons">
+                    <button class="like-btn">❤</button>
+                    <button class="download-btn">⬇</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card animals" data-title="dog">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=900" alt="">
+            <div class="overlay">
+                <h3>Dog</h3>
+                <div class="card-buttons">
+                    <button class="like-btn">❤</button>
+                    <button class="download-btn">⬇</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card nature" data-title="forest">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=900" alt="">
+            <div class="overlay">
+                <h3>Forest</h3>
+                <div class="card-buttons">
+                    <button class="like-btn">❤</button>
+                    <button class="download-btn">⬇</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card city" data-title="building">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=900" alt="">
+            <div class="overlay">
+                <h3>Buildings</h3>
+                <div class="card-buttons">
+                    <button class="like-btn">❤</button>
+                    <button class="download-btn">⬇</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card animals" data-title="cat">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=900" alt="">
+            <div class="overlay">
+                <h3>Cat</h3>
+                <div class="card-buttons">
+                    <button class="like-btn">❤</button>
+                    <button class="download-btn">⬇</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox">
+        <span id="close">×</span>
+        <button id="prev">❮</button>
+        <img id="lightboxImg">
+        <button id="next">❯</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
